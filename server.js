@@ -138,7 +138,7 @@ app.get("/16", (req, res) => {
 });
 
 app.get("/17", (req, res) => {
-  res.status(200).send(1)7;
+  res.status(200).send(17);
 });
 
 app.get("/18", (req, res) => {
