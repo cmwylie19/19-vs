@@ -1,0 +1,1465 @@
+
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-0
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+        - exact: /api/v1/healthz
+        options:
+          prefixRewrite: /check/healthz
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-1
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - exact: /api/v1/create
+        options:
+          prefixRewrite: /create
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-2
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - exact: /api/v1/tasks
+        options:
+          prefixRewrite: /
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-3
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/
+        options:
+          prefixRewrite: /
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-4
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/1
+        options:
+          prefixRewrite: /1
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-5
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/2
+        options:
+          prefixRewrite: /2
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-6
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/3
+        options:
+          prefixRewrite: /3
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-7
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/4
+        options:
+          prefixRewrite: /4
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-8
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/5
+        options:
+          prefixRewrite: /5
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-9
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/6
+        options:
+          prefixRewrite: /6
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-10
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/7
+        options:
+          prefixRewrite: /7
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-11
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/8
+        options:
+          prefixRewrite: /8
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-12
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/9
+        options:
+          prefixRewrite: /9
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-13
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/10
+        options:
+          prefixRewrite: /10
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-14
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/11
+        options:
+          prefixRewrite: /11
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-15
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/12
+        options:
+          prefixRewrite: /12
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-16
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/13
+        options:
+          prefixRewrite: /13
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-17
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/14
+        options:
+          prefixRewrite: /14
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-18
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/15
+        options:
+          prefixRewrite: /15
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-19
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/16
+        options:
+          prefixRewrite: /16
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-20
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/17
+        options:
+          prefixRewrite: /17
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-21
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/18
+        options:
+          prefixRewrite: /18
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-22
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/19
+        options:
+          prefixRewrite: /19
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system
+---
+apiVersion: gateway.solo.io/v1
+kind: VirtualService
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+  managedFields:
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:reportedBy: {}
+          f:state: {}
+          f:subresourceStatuses:
+            .: {}
+            f:*v1.Proxy.gloo-system.gateway-proxy:
+              .: {}
+              f:reportedBy: {}
+              f:state: {}
+      manager: gateway
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:virtualHost:
+            .: {}
+            f:domains: {}
+        f:status: {}
+      manager: glooctl
+      operation: Update
+    - apiVersion: gateway.solo.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:virtualHost:
+            f:routes: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+  name: default-23
+  namespace: gloo-system
+spec:
+  virtualHost:
+    domains:
+      - "*"
+    routes:
+      - matchers:
+          - prefix: /api/v1/tasks/20
+        options:
+          prefixRewrite: /20
+        routeAction:
+          single:
+            upstream:
+              name: default-nineteen-vs-8080 
+              namespace: gloo-system

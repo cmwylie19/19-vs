@@ -2,22 +2,22 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: task-service
-  name: task-service
+    app: nineteen-vs
+  name: nineteen-vs
   namespace: default
 spec:
   selector:
     matchLabels:
-      app: task-service
+      app: nineteen-vs
   replicas: 1
   template:
     metadata:
       labels:
-        app: task-service
+        app: nineteen-vs
     spec:
       containers:
-        - image: docker.io/cmwylie19/task-service:latest
-          name: task-service
+        - image: docker.io/cmwylie19/19-vs:latest
+          name: 19-vs
           ports:
             - containerPort: 8080
               name: http
@@ -25,13 +25,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: task-service
+  name: nineteen-vs
   namespace: default
   labels:
-    service: task-service
+    service: nineteen-vs
 spec:
   ports:
     - port: 8080
       protocol: TCP
   selector:
-    app: task-service
+    app: nineteen-vs
