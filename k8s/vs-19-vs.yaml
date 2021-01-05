@@ -117,9 +117,9 @@ spec:
       - "ddc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/1
+          - prefix: /api/v1/test/1
         options:
-          prefixRewrite: /1
+          prefixRewrite: /test/1
         routeAction:
           single:
             upstream:
@@ -131,7 +131,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-5
   namespace: gloo-system
 spec:
@@ -142,9 +142,9 @@ spec:
       - "eec"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/2
+          - prefix: /api/v1/test/2
         options:
-          prefixRewrite: /2
+          prefixRewrite: /test/2
         routeAction:
           single:
             upstream:
@@ -156,7 +156,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-6
   namespace: gloo-system
 spec:
@@ -167,9 +167,9 @@ spec:
       - "ffc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/3
+          - prefix: /api/v1/test/3
         options:
-          prefixRewrite: /3
+          prefixRewrite: /test/3
         routeAction:
           single:
             upstream:
@@ -181,7 +181,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-7
   namespace: gloo-system
 spec:
@@ -192,9 +192,9 @@ spec:
       - "ggc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/4
+          - prefix: /api/v1/test/4
         options:
-          prefixRewrite: /4
+          prefixRewrite: /test/4
         routeAction:
           single:
             upstream:
@@ -206,7 +206,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-8
   namespace: gloo-system
 spec:
@@ -217,9 +217,9 @@ spec:
       - "hhc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/5
+          - prefix: /api/v1/test/5
         options:
-          prefixRewrite: /5
+          prefixRewrite: /test/5
         routeAction:
           single:
             upstream:
@@ -231,7 +231,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-9
   namespace: gloo-system
 spec:
@@ -242,9 +242,9 @@ spec:
       - "iic"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/6
+          - prefix: /api/v1/test/6
         options:
-          prefixRewrite: /6
+          prefixRewrite: /test/6
         routeAction:
           single:
             upstream:
@@ -256,7 +256,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-10
   namespace: gloo-system
 spec:
@@ -267,9 +267,9 @@ spec:
       - "jjc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/7
+          - prefix: /api/v1/test/7
         options:
-          prefixRewrite: /7
+          prefixRewrite: /test/7
         routeAction:
           single:
             upstream:
@@ -281,7 +281,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-11
   namespace: gloo-system
 spec:
@@ -292,9 +292,9 @@ spec:
       - "kkc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/8
+          - prefix: /api/v1/test/8
         options:
-          prefixRewrite: /8
+          prefixRewrite: /test/8
         routeAction:
           single:
             upstream:
@@ -306,7 +306,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-12
   namespace: gloo-system
 spec:
@@ -317,9 +317,9 @@ spec:
       - "llc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/9
+          - prefix: /api/v1/test/9
         options:
-          prefixRewrite: /9
+          prefixRewrite: /test/9
         routeAction:
           single:
             upstream:
@@ -331,7 +331,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-13
   namespace: gloo-system
 spec:
@@ -342,9 +342,9 @@ spec:
       - "mmc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/10
+          - prefix: /api/v1/test/10
         options:
-          prefixRewrite: /10
+          prefixRewrite: /test/10
         routeAction:
           single:
             upstream:
@@ -356,7 +356,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-14
   namespace: gloo-system
 spec:
@@ -367,9 +367,9 @@ spec:
       - "nnc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/11
+          - prefix: /api/v1/test/11
         options:
-          prefixRewrite: /11
+          prefixRewrite: /test/11
         routeAction:
           single:
             upstream:
@@ -381,7 +381,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-15
   namespace: gloo-system
 spec:
@@ -392,9 +392,9 @@ spec:
       - "ooc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/12
+          - prefix: /api/v1/test/12
         options:
-          prefixRewrite: /12
+          prefixRewrite: /test/12
         routeAction:
           single:
             upstream:
@@ -406,7 +406,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-16
   namespace: gloo-system
 spec:
@@ -417,9 +417,9 @@ spec:
       - "ppc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/13
+          - prefix: /api/v1/test/13
         options:
-          prefixRewrite: /13
+          prefixRewrite: /test/13
         routeAction:
           single:
             upstream:
@@ -431,7 +431,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-17
   namespace: gloo-system
 spec:
@@ -442,9 +442,9 @@ spec:
       - "qqc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/14
+          - prefix: /api/v1/test/14
         options:
-          prefixRewrite: /14
+          prefixRewrite: /test/14
         routeAction:
           single:
             upstream:
@@ -456,7 +456,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-18
   namespace: gloo-system
 spec:
@@ -467,9 +467,9 @@ spec:
       - "rrc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/15
+          - prefix: /api/v1/test/15
         options:
-          prefixRewrite: /15
+          prefixRewrite: /test/15
         routeAction:
           single:
             upstream:
@@ -481,7 +481,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-19
   namespace: gloo-system
 spec:
@@ -492,9 +492,9 @@ spec:
       - "ssc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/16
+          - prefix: /api/v1/test/16
         options:
-          prefixRewrite: /16
+          prefixRewrite: /test/16
         routeAction:
           single:
             upstream:
@@ -506,7 +506,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-20
   namespace: gloo-system
 spec:
@@ -517,9 +517,9 @@ spec:
       - "ttc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/17
+          - prefix: /api/v1/test/17
         options:
-          prefixRewrite: /17
+          prefixRewrite: /test/17
         routeAction:
           single:
             upstream:
@@ -531,7 +531,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
  
   name: default-21
   namespace: gloo-system
@@ -543,9 +543,9 @@ spec:
       - "uuc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/18
+          - prefix: /api/v1/test/18
         options:
-          prefixRewrite: /18
+          prefixRewrite: /test/18
         routeAction:
           single:
             upstream:
@@ -557,7 +557,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-22
   namespace: gloo-system
 spec:
@@ -568,9 +568,9 @@ spec:
       - "vvc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/19
+          - prefix: /api/v1/test/19
         options:
-          prefixRewrite: /19
+          prefixRewrite: /test/19
         routeAction:
           single:
             upstream:
@@ -582,7 +582,7 @@ kind: VirtualService
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
+      {"apiVersion":"gateway.solo.io/v1","kind":"VirtualService","metadata":{"annotations":{},"name":"default","namespace":"gloo-system"},"spec":{"virtualHost":{"domains":["*"],"routes":[{"matchers":[{"exact":"/api/v1/test/create"}],"options":{"prefixRewrite":"/create"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}},{"matchers":[{"exact":"/api/v1/test/users"}],"options":{"prefixRewrite":"/"},"routeAction":{"single":{"upstream":{"name":"default-nineteen-vs-8080 ","namespace":"gloo-system"}}}}]}}}
   name: default-23
   namespace: gloo-system
 spec:
@@ -593,9 +593,9 @@ spec:
       - "wwc"
     routes:
       - matchers:
-          - prefix: /api/v1/tasks/20
+          - prefix: /api/v1/test/20
         options:
-          prefixRewrite: /20
+          prefixRewrite: /test/20
         routeAction:
           single:
             upstream:
